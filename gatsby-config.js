@@ -11,5 +11,6 @@ module.exports = {
         buildMarkdownNodes: true,
       },
     },
+    `gatsby-plugin-image`,
   ],
 }
