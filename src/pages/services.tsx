@@ -1,8 +1,14 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC } from 'react'
 import { PageProps } from 'gatsby'
+import Layout from '../components/layout/'
+import Masthead from '../components/servicesPage/masthead/'
 
 const ServicesPage: FC<PageProps> = () => {
-  return <Fragment></Fragment>
+  return (
+    <Layout>
+      <Masthead />
+    </Layout>
+  )
 }
 
 export default ServicesPage
