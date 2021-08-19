@@ -68,9 +68,9 @@ const ServicesSection: FC = () => {
             <GatsbyImage
               alt={edge.node.imageAlts[0]}
               image={edge.node.images[0].gatsbyImageData}
-              onClick={handleClick(edge.node.heading)}
             />
             <h2>{edge.node.heading}</h2>
+            <button onClick={handleClick(edge.node.heading)}>test</button>
           </div>
         )
       })}
