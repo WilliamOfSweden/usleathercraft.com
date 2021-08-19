@@ -75,7 +75,7 @@ const ServicesSection: FC = () => {
       })}
 
       {edges
-        .filter(edge => edge.node.id === category)
+        .filter(edge => edge.node.heading === category)
         .map(edge => {
           return (
             <div key={edge.node.id}>
@@ -94,6 +94,7 @@ const ServicesSection: FC = () => {
             </div>
           )
         })}
+      <p>{category}</p>
     </section>
   )
 }
