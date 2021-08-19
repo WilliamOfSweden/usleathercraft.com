@@ -52,11 +52,11 @@ const ServicesSection: FC = () => {
     }
   `)
 
-  const [state, setState] = useState<null | string>(null)
+  const [category, setCategory] = useState<null | string>(null)
 
   useEffect(() => {
     console.log('hej')
-  }, [state])
+  }, [category])
 
   return (
     <section>
@@ -67,7 +67,7 @@ const ServicesSection: FC = () => {
             <GatsbyImage
               alt={edge.node.imageAlts[0]}
               image={edge.node.images[0].gatsbyImageData}
-              onClick={() => setState(edge.node.heading)}
+              onClick={() => setCategory(edge.node.heading)}
             />
             <h2>{edge.node.heading}</h2>
           </div>
@@ -75,7 +75,7 @@ const ServicesSection: FC = () => {
       })}
 
       {edges
-        .filter(edge => edge.node.heading === state)
+        .filter(edge => edge.node.id === category)
         .map(edge => {
           return (
             <div key={edge.node.id}>
