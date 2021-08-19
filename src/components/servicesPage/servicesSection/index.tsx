@@ -60,7 +60,7 @@ const ServicesSection: FC = () => {
       {edges.map(edge => {
         return (
           <div key={edge.node.id}>
-            <div onClick={() => setCategory(edge.node.heading)}>
+            <div onClick={() => setCategory(edge.node.id)}>
               <GatsbyImage
                 alt={edge.node.imageAlts[0]}
                 image={edge.node.images[0].gatsbyImageData}
