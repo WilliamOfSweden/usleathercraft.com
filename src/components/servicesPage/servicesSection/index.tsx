@@ -52,7 +52,7 @@ const ServicesSection: FC = () => {
     }
   `)
 
-  const [category, setCategory] = useState<null | string>(null)
+  const [category, setCategory] = useState<null | string>('Kategori')
 
   useEffect(() => {
     console.log('hej')
