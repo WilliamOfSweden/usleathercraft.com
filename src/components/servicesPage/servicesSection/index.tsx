@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react'
+import React, { FC, useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
@@ -52,12 +52,7 @@ const ServicesSection: FC = () => {
     }
   `)
 
-  const [category, setCategory] = useState<null | string>('Kategori')
-
-  const handleClick = (x: string) => () => {
-    setCategory(x)
-    console.log(category)
-  }
+  const [category, setCategory] = useState<null | string>(null)
 
   return (
     <section>
@@ -65,7 +60,7 @@ const ServicesSection: FC = () => {
       {edges.map(edge => {
         return (
           <div key={edge.node.id}>
-            <div onClick={handleClick(edge.node.heading)}>
+            <div onClick={() => setCategory(edge.node.id)}>
               <GatsbyImage
                 alt={edge.node.imageAlts[0]}
                 image={edge.node.images[0].gatsbyImageData}
@@ -77,7 +72,7 @@ const ServicesSection: FC = () => {
       })}
 
       {edges
-        .filter(edge => edge.node.heading === category)
+        .filter(edge => edge.node.id === category)
         .map(edge => {
           return (
             <div key={edge.node.id}>
@@ -96,7 +91,6 @@ const ServicesSection: FC = () => {
             </div>
           )
         })}
-      <p>{category}</p>
     </section>
   )
 }
