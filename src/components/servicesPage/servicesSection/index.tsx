@@ -196,6 +196,11 @@ const ServicesSection: FC = () => {
         })}
       </Grid>
       <Divider className={classes.divider} id='services-divider' />
+      {!category && (
+        <Typography align='center' variant='h5'>
+          Choose one of the above categories to read more about it.
+        </Typography>
+      )}
       <Grid container id='info-section' spacing={3}>
         {edges
           .filter(edge => edge.node.id === category)
