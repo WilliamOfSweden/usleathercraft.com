@@ -5,6 +5,14 @@ require('dotenv').config({
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-source-graphcms',
       options: {
         endpoint: process.env.GCMS_ENDPOINT,
