@@ -12,6 +12,7 @@ const Layout: FC<Props> = ({ children }) => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <main>{children}</main>
+      <footer style={{ height: `30vh` }} />
     </ThemeProvider>
   )
 }
