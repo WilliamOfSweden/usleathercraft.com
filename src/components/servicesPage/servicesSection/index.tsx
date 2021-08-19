@@ -54,21 +54,18 @@ const ServicesSection: FC = () => {
 
   const [category, setCategory] = useState<null | string>(null)
 
-  useEffect(() => {
-    console.log('hej')
-  }, [category])
-
   return (
     <section>
       <h5>Choose a category that you want to know more about.</h5>
       {edges.map(edge => {
         return (
           <div key={edge.node.id}>
-            <GatsbyImage
-              alt={edge.node.imageAlts[0]}
-              image={edge.node.images[0].gatsbyImageData}
-              onClick={() => setCategory(edge.node.heading)}
-            />
+            <div onClick={() => setCategory(edge.node.heading)}>
+              <GatsbyImage
+                alt={edge.node.imageAlts[0]}
+                image={edge.node.images[0].gatsbyImageData}
+              />
+            </div>
             <h2>{edge.node.heading}</h2>
           </div>
         )
