@@ -54,9 +54,10 @@ const ServicesSection: FC = () => {
 
   const [category, setCategory] = useState<null | string>('Kategori')
 
-  useEffect(() => {
-    console.log('hej')
-  }, [category])
+  const handleClick = (x: string) => () => {
+    setCategory(x)
+    console.log(category)
+  }
 
   return (
     <section>
@@ -67,7 +68,7 @@ const ServicesSection: FC = () => {
             <GatsbyImage
               alt={edge.node.imageAlts[0]}
               image={edge.node.images[0].gatsbyImageData}
-              onClick={() => setCategory(edge.node.heading)}
+              onClick={handleClick(edge.node.heading)}
             />
             <h2>{edge.node.heading}</h2>
           </div>
