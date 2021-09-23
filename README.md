@@ -1,7 +1,3 @@
-<div align='center'>
-    <img alt='US Leather Craft | Logo' src='https://usleathercraft.com/logo.svg' width='180' />
-</div>
-
 # US Leather Craft • Company Website
 
 <a href='https://usleathercraft.com' target='_blank' rel='noreferrer noopener'>
@@ -15,7 +11,7 @@
 
 <a href='https://usleathercraft.com' target='_blank' rel='noreferrer noopener'>www.usleathercraft.netlify.app</a>
 
----
+[![Netlify Status](https://api.netlify.com/api/v1/badges/186630d0-c517-4276-9df4-1fd25089a3d8/deploy-status)](https://app.netlify.com/sites/usleathercraft/deploys)
 
 ## Tech Stack
 
