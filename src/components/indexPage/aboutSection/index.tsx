@@ -1,14 +1,13 @@
 import React, { FC } from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import PALETTE from '../../../styles/colorPalette'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
-import { Link } from 'gatsby'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -116,6 +115,14 @@ const AboutSection: FC = () => {
           >
             {body}
           </Typography>
+          <Button
+            className={classes.btn}
+            component={Link}
+            size='large'
+            to='/about'
+          >
+            About Us
+          </Button>
         </Grid>
         <Grid
           className={classes.imagesWrapper}
