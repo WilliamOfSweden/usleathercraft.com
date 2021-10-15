@@ -1,4 +1,4 @@
-# Company Website • US Leather Craft
+## Company Website • US Leather Craft
 
 [![](./static/banner.png)](https://usleathercraft.com)
 [www.usleathercraft.com](https://usleathercraft.com)
