@@ -4,15 +4,12 @@
       .f5706281-9001-4bf3-a6ca-4d8cb77b1771 {
         fill: #3f200d;
       }
-
       .ad6231cd-8484-4934-a69d-0c754a3a7992, .e28da752-0f96-4ea8-800c-4213c0d5214c {
         fill: beige;
       }
-
       .b14280c0-067f-4917-b1f9-b6ec83d5df19, .e28da752-0f96-4ea8-800c-4213c0d5214c {
         fill-rule: evenodd;
       }
-
       .b14280c0-067f-4917-b1f9-b6ec83d5df19 {
         fill: #fff;
       }

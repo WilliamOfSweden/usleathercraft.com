@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { makeStyles, createStyles } from '@material-ui/core/styles'
 import useMobileNavStore from '../../../stores/mobileNavStore'
 import useWindowSize from '../../../hooks/useWindowSize'
@@ -21,8 +21,7 @@ interface Props {
     site: {
       siteMetadata: {
         navLinks: {
-          name: string
-
+          name: strin
           link: string
         }[]
       }
@@ -30,8 +29,14 @@ interface Props {
   }
 }
 
-const MobileNav: FC<Props> = ({ data }) => {
+const MobileNav = ({ data }: Props) => {
   const classes = useStyles()
+
+  interface StateProps {
+    activeMobileNav: boolean
+    toggleActiveMobileNav: () => void
+    resetActiveMobileNav: () => void
+  }
 
   const active = useMobileNavStore((state: StateProps) => state.activeMobileNav)
 
@@ -51,17 +56,8 @@ const MobileNav: FC<Props> = ({ data }) => {
     }
   })
 
-  interface StateProps {
-    activeMobileNav: boolean
-
-    toggleActiveMobileNav: () => void
-
-    resetActiveMobileNav: () => void
-  }
-
   interface LinkProps {
     name: string
-
     link: string
   }
 

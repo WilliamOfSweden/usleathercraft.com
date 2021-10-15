@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 import ContactForm from './contactForm'
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const ContactSection: FC = () => {
+const ContactSection = () => {
   const classes = useStyles()
 
   return (

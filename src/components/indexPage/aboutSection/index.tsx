@@ -1,6 +1,5 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import PALETTE from '../../../styles/colorPalette'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Container from '@material-ui/core/Container'
@@ -9,12 +8,13 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 
+import PALETTE from '../../../styles/colorPalette'
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       marginTop: theme.spacing(4),
       position: `relative`,
-
       '&::after': {
         content: '" "',
         display: 'block',
@@ -26,29 +26,23 @@ const useStyles = makeStyles((theme: Theme) =>
         left: 8,
       },
     },
-
     container: {
       paddingBottom: theme.spacing(3),
       paddingTop: theme.spacing(9.65),
     },
-
     image: {
       width: `100%`,
       height: `100%`,
     },
-
     imagesWrapper: {
       paddingRight: `0 !important`,
     },
-
     rightImage: {
       paddingRight: `0 !important`,
     },
-
     paragraph: {
       maxWidth: `55ch`,
     },
-
     span: {
       fontFamily: 'dancing script',
       fontSize: `4.5rem`,
@@ -56,18 +50,15 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: 'none',
       color: PALETTE.accentColor,
     },
-
     textWrapper: {
       alignItems: `center`,
       display: `flex`,
       flexDirection: 'column',
       justifyContent: `center`,
       marginBottom: theme.spacing(9.65),
-
       [theme.breakpoints.up('md')]: {
         marginBottom: 0,
       },
-
       [theme.breakpoints.up('md')]: {
         marginBottom: theme.spacing(13),
       },
@@ -75,7 +66,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const AboutSection: FC = () => {
+const AboutSection = () => {
   const {
     graphCmsIndexPageAboutSection: { styledHeading, heading, body, imageAlt },
   } = useStaticQuery(graphql`

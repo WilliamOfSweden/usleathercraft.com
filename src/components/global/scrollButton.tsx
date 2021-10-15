@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { createStyles, makeStyles } from '@material-ui/core/styles'
 import KeyboardArrowDownOutlinedIcon from '@material-ui/icons/KeyboardArrowDownOutlined'
 import scrollTo from 'gatsby-plugin-smoothscroll'
@@ -15,7 +15,6 @@ const useStyles = makeStyles(() =>
       zIndex: 2,
       cursor: `pointer`,
     },
-
     buttonWrapper: {
       bottom: -10,
       left: 0,
@@ -33,7 +32,7 @@ interface Props {
   scrollTarget: string
 }
 
-const ScrollButton: FC<Props> = ({ scrollTarget }) => {
+const ScrollButton = ({ scrollTarget }: Props) => {
   const classes = useStyles()
 
   return (

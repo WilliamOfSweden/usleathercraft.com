@@ -1,15 +1,15 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
-import useMobileNavStore from '../../../stores/mobileNavStore'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
+
+import useMobileNavStore from '../../../stores/mobileNavStore'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     mobileOnly: {
       display: 'flex',
       marginRight: theme.spacing(-1.5),
-
       [theme.breakpoints.up('md')]: {
         display: 'none',
       },
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const MobileNavToggler: FC = () => {
+const MobileNavToggler = () => {
   const classes = useStyles()
 
   interface StateProps {

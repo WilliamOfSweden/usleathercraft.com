@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import { Link } from 'gatsby'
@@ -7,12 +7,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     deskTopOnly: {
       display: 'none',
-
       [theme.breakpoints.up('md')]: {
         display: 'flex',
       },
     },
-
     navLinks: {
       padding: theme.spacing(1.5, 2),
     },
@@ -25,7 +23,6 @@ interface Props {
       siteMetadata: {
         navLinks: {
           name: string
-
           link: string
         }[]
       }
@@ -33,12 +30,11 @@ interface Props {
   }
 }
 
-const DesktopNav: FC<Props> = ({ data }) => {
+const DesktopNav = ({ data }: Props) => {
   const classes = useStyles()
 
   interface LinkProps {
     name: string
-
     link: string
   }
 

@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
-import { PageProps } from 'gatsby'
+import React from 'react'
+
 import Layout from '../components/layout/'
 import Masthead from '../components/servicesPage/masthead/'
 import LeatherSection from '../components/servicesPage/leatherSection/'
 import ServicesSection from '../components/servicesPage/servicesSection/'
 
-const ServicesPage: FC<PageProps> = () => {
+const ServicesPage = () => {
   return (
     <Layout>
       <Masthead />

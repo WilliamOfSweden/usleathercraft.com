@@ -1,10 +1,11 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { useStaticQuery, graphql } from 'gatsby'
 import Container from '@material-ui/core/Container'
+import { StaticImage } from 'gatsby-plugin-image'
 import Box from '@material-ui/core/Box'
 import Logo from './logo'
-import { StaticImage } from 'gatsby-plugin-image'
+
 import ScrollButton from '../../global/scrollButton'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -13,22 +14,18 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(8),
       position: 'relative',
     },
-
     image: {
       height: `60vh`,
       minHeight: `360px`,
       width: `100%`,
-
       [theme.breakpoints.up('md')]: {
         height: `70vh`,
         minHeight: `600px`,
       },
-
       [theme.breakpoints.up('lg')]: {
         height: `85vh`,
       },
     },
-
     contentWrapper: {
       alignItems: `center`,
       display: `flex`,
@@ -42,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Masthead: FC = () => {
+const Masthead = () => {
   const {
     graphCmsIndexPageMasthead: { imageAlt },
   } = useStaticQuery(graphql`

@@ -1,10 +1,11 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import { useStaticQuery, graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import Container from '@material-ui/core/Container'
+import { StaticImage } from 'gatsby-plugin-image'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
+
 import ScrollButton from '../../global/scrollButton'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -13,7 +14,6 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: theme.spacing(8),
       position: 'relative',
     },
-
     contentWrapper: {
       alignItems: `center`,
       display: `flex`,
@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme: Theme) =>
       top: 0,
       left: 0,
     },
-
     h1: {
       fontSize: `calc(1rem + 4vw)`,
       letterSpacing: `4px`,
@@ -32,22 +31,18 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingRight: theme.spacing(2),
       textTransform: `uppercase`,
     },
-
     image: {
       height: `60vh`,
       minHeight: `360px`,
       width: `100%`,
-
       [theme.breakpoints.up('md')]: {
         height: `70vh`,
         minHeight: `600px`,
       },
-
       [theme.breakpoints.up('lg')]: {
         height: `85vh`,
       },
     },
-
     leftArrow: {
       height: 0,
       width: 0,
@@ -56,7 +51,6 @@ const useStyles = makeStyles((theme: Theme) =>
       borderBottom: `7px solid transparent`,
       marginRight: `-2px`,
     },
-
     rightArrow: {
       height: 0,
       width: 0,
@@ -65,7 +59,6 @@ const useStyles = makeStyles((theme: Theme) =>
       borderBottom: `7px solid transparent`,
       marginLeft: `-2px`,
     },
-
     span: {
       display: `block`,
       flex: 2,
@@ -74,7 +67,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Masthead: FC = () => {
+const Masthead = () => {
   const {
     graphCmsAboutPageMasthead: { title, subTitle, imageAlt },
   } = useStaticQuery(graphql`
@@ -114,7 +107,6 @@ const Masthead: FC = () => {
           >
             {title}
           </Typography>
-
           <Box display='flex' justifyContent='center' marginBottom={1.67}>
             <Box
               display='flex'
@@ -127,12 +119,9 @@ const Masthead: FC = () => {
 
                 <Box height='2px' bgcolor='beige' width='100%' />
               </Box>
-
               <span className={classes.span}>✻</span>
-
               <Box display='flex' alignItems='center' flex={5} width='100%'>
                 <Box height='2px' bgcolor='beige' width='100%' />
-
                 <Box className={classes.rightArrow} />
               </Box>
             </Box>

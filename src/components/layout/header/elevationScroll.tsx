@@ -1,14 +1,13 @@
-import React, { FC } from 'react'
+import React, { ReactElement } from 'react'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 
 interface Props {
-  children: React.ReactElement
+  children: ReactElement
 }
 
-const ElevationScroll: FC<Props> = ({ children }) => {
+const ElevationScroll = ({ children }: Props) => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-
     threshold: 0,
   })
 

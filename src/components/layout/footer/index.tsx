@@ -1,10 +1,11 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import PALETTE from '../../../styles/colorPalette'
 import Container from '@material-ui/core/Container'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
+
+import PALETTE from '../../../styles/colorPalette'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -14,30 +15,25 @@ const useStyles = makeStyles((theme: Theme) =>
       lineHeight: theme.spacing(0.2),
       textAlign: 'center',
     },
-
     flexItem: {
       flex: 1,
     },
-
     footer: {
       marginTop: theme.spacing(10),
       paddingBottom: theme.spacing(4),
     },
-
     lowerDivider: {
       borderTop: `2px dashed ${PALETTE.altColorOne}`,
       marginBottom: theme.spacing(4),
       marginTop: theme.spacing(4),
       width: `100%`,
     },
-
     divider: {
       borderTop: `2px dashed ${PALETTE.altColorOne}`,
       marginTop: theme.spacing(4),
       marginBottom: theme.spacing(4),
       width: `100%`,
     },
-
     signature: {
       color: PALETTE.accentColor,
       fontFamily: 'dancing script',
@@ -46,26 +42,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Footer: FC = () => {
+const Footer = () => {
   const classes = useStyles()
 
   return (
     <footer className={classes.footer}>
       <Container maxWidth='xl'>
-        {/* <Divider className={classes.divider} />
-
-        <address className={classes.adress}>
-          1271 ROUTE 22 EAST
-          <br />
-          SUITE W4
-          <br />
-          Lebanon, NJ, 08833
-          <br />
-          Unites States
-        </address> */}
-
         <Divider className={classes.divider} />
-
         <Box justifyContent='space-between' display='flex'>
           <Typography
             align='center'
@@ -86,16 +69,6 @@ const Footer: FC = () => {
               William Daghouz
             </a>
           </Typography>
-
-          {/* <address className={classes.adress}>
-            1271 ROUTE 22 EAST
-            <br />
-            SUITE W4
-            <br />
-            Lebanon, NJ, 08833
-            <br />
-            Unites States
-          </address> */}
         </Box>
       </Container>
     </footer>

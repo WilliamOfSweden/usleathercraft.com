@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
@@ -9,13 +9,11 @@ const useStyles = makeStyles((theme: Theme) =>
       display: `flex`,
       marginBottom: theme.spacing(2),
     },
-
     textArea: {
       display: `flex`,
       marginBottom: theme.spacing(2),
       marginTop: theme.spacing(4),
     },
-
     btn: {
       marginTop: `2rem`,
       letterSpacing: `1px`,
@@ -27,7 +25,7 @@ interface Props {
   hidden?: boolean
 }
 
-const ContactForm: FC<Props> = ({ hidden }) => {
+const ContactForm = ({ hidden }: Props) => {
   const classes = useStyles()
 
   return (
@@ -42,13 +40,11 @@ const ContactForm: FC<Props> = ({ hidden }) => {
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type='hidden' name='form-name' value='contact-form' />
-
       <p hidden>
         <label>
           Don’t fill this out: <input name='bot-field' />
         </label>
       </p>
-
       <TextField
         autoComplete='name'
         className={classes.textField}
@@ -58,7 +54,6 @@ const ContactForm: FC<Props> = ({ hidden }) => {
         type='text'
         variant='outlined'
       />
-
       <TextField
         autoComplete='email'
         className={classes.textField}
@@ -68,7 +63,6 @@ const ContactForm: FC<Props> = ({ hidden }) => {
         type='email'
         variant='outlined'
       />
-
       <TextField
         autoComplete='tel-national'
         className={classes.textField}
@@ -77,7 +71,6 @@ const ContactForm: FC<Props> = ({ hidden }) => {
         type='phone'
         variant='outlined'
       />
-
       <TextField
         className={classes.textArea}
         id='outlined-textarea'
@@ -88,7 +81,6 @@ const ContactForm: FC<Props> = ({ hidden }) => {
         rows={4}
         variant='outlined'
       />
-
       <Button
         className={classes.btn}
         color='primary'

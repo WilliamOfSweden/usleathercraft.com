@@ -1,6 +1,5 @@
-import React, { FC, Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import PALETTE from '../../../styles/colorPalette'
 import { useStaticQuery, graphql } from 'gatsby'
 import { IGatsbyImageData, GatsbyImage } from 'gatsby-plugin-image'
 import scrollTo from 'gatsby-plugin-smoothscroll'
@@ -10,6 +9,8 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Button from '@material-ui/core/Button'
+
+import PALETTE from '../../../styles/colorPalette'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,7 +24,6 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(8),
       maxWidth: `200px`,
       position: `relative`,
-
       '&::after': {
         content: '" "',
         display: 'block',
@@ -35,16 +35,13 @@ const useStyles = makeStyles((theme: Theme) =>
         left: 8,
       },
     },
-
     container: {
       marginTop: theme.spacing(15),
     },
-
     divider: {
       borderTop: `2px dashed ${PALETTE.altColorOne}`,
       marginBottom: theme.spacing(7),
     },
-
     h2: {
       color: `beige`,
       fontFamily: 'source sans pro',
@@ -53,26 +50,21 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(1),
       textTransform: 'uppercase',
     },
-
     imagesWrapper: {
       paddingRight: `0 !important`,
       marginTop: theme.spacing(9),
-
       [theme.breakpoints.up('md')]: {
         marginTop: 0,
       },
     },
-
     gridItem: {
       height: `100%`,
     },
-
     image: {
       width: `100%`,
       cursor: `pointer`,
       maxHeight: `300px`,
     },
-
     paragraph: {
       [theme.breakpoints.up('md')]: {
         '& > p': {
@@ -80,24 +72,20 @@ const useStyles = makeStyles((theme: Theme) =>
         },
       },
     },
-
     rightImage: {
       paddingRight: `0 !important`,
     },
-
     servicesContainer: {
       paddingBottom: theme.spacing(5),
     },
-
     textWrapper: {
       display: `flex`,
       flexDirection: 'column',
-      // justifyContent: `center`,
     },
   })
 )
 
-const ServicesSection: FC = () => {
+const ServicesSection = () => {
   interface DataProps {
     allGraphCmsServicesPageServicePost: {
       edges: {

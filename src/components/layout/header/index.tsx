@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
@@ -8,6 +8,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Container from '@material-ui/core/Container'
 import Toolbar from '@material-ui/core/Toolbar'
 import Box from '@material-ui/core/Box'
+
 import DesktopNav from './desktopNav'
 import MobileNavToggler from './mobileNavToggler'
 import MobileNav from './MobileNav'
@@ -17,7 +18,6 @@ const useStyles = makeStyles((theme: Theme) =>
     appBar: {
       zIndex: theme.zIndex.drawer + 1,
     },
-
     container: {
       [theme.breakpoints.up('md')]: {
         paddingRight: theme.spacing(1),
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Header: FC = () => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query navLinkQuery {
       site {
@@ -51,11 +51,8 @@ const Header: FC = () => {
           <Container className={classes.container} maxWidth='xl'>
             <Toolbar disableGutters>
               <Box flexGrow={1} display='flex' alignItems='center' px={5} />
-
               <DesktopNav data={data} />
-
               <MobileNavToggler />
-
               <MobileNav data={data} />
             </Toolbar>
           </Container>

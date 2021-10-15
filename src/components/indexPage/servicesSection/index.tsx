@@ -1,20 +1,20 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import PALETTE from '../../../styles/colorPalette'
 import { useStaticQuery, graphql } from 'gatsby'
 import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 import { Link } from 'gatsby'
+
+import PALETTE from '../../../styles/colorPalette'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     btn: {
       textAlign: 'center',
       position: `relative`,
-
       '&::after': {
         content: '" "',
         display: 'block',
@@ -26,38 +26,31 @@ const useStyles = makeStyles((theme: Theme) =>
         left: 8,
       },
     },
-
     container: {
       paddingBottom: theme.spacing(15),
       paddingTop: theme.spacing(15),
     },
-
     divider: {
       borderTop: `2px dashed ${PALETTE.altColorOne}`,
       marginTop: theme.spacing(7),
       width: `100%`,
       maxWidth: `60ch`,
-
       [theme.breakpoints.up('md')]: {
         display: `none`,
       },
     },
-
     h2: {
       marginBottom: theme.spacing(10),
     },
-
     h3: {
       color: PALETTE.altColorOne,
       fontFamily: 'cabin sketch',
       fontSize: `2.5rem`,
       marginBottom: theme.spacing(1),
     },
-
     paragraph: {
       maxWidth: `55ch`,
     },
-
     textWrapper: {
       alignItems: `center`,
       display: `flex`,
@@ -66,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const ServicesSection: FC = () => {
+const ServicesSection = () => {
   interface DataProps {
     allGraphCmsIndexPageServicePost: {
       edges: {
