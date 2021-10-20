@@ -1,5 +1,6 @@
 import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
+import { useStaticQuery, graphql } from 'gatsby'
 import Container from '@material-ui/core/Container'
 import { StaticImage } from 'gatsby-plugin-image'
 import Box from '@material-ui/core/Box'
@@ -67,12 +68,24 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 const Masthead = () => {
+  const {
+    graphCmsContactPageMasthead: { title, subtitle, imageAlt },
+  } = useStaticQuery(graphql`
+    query ContactPageMastheadQuery {
+      graphCmsContactPageMasthead {
+        title
+        subtitle
+        imageAlt
+      }
+    }
+  `)
+
   const classes = useStyles()
 
   return (
     <Container className={classes.container} component='section' maxWidth='xl'>
       <StaticImage
-        alt='Vintage phone placed on wooden table.'
+        alt={imageAlt}
         className={classes.image}
         formats={['auto', 'webp', 'avif']}
         layout='fullWidth'
@@ -89,7 +102,7 @@ const Masthead = () => {
             component='h1'
             variant='h1'
           >
-            Let's Connect
+            {title}
           </Typography>
           <Box display='flex' justifyContent='center' marginBottom={1.67}>
             <Box
@@ -109,10 +122,7 @@ const Masthead = () => {
               </Box>
             </Box>
           </Box>
-          <Typography align='center'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Asperiores, autus.
-          </Typography>
+          <Typography align='center'>{subtitle}</Typography>
         </Box>
       </Box>
       <ScrollButton scrollTarget='contact-section' />

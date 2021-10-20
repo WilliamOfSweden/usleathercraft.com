@@ -69,12 +69,12 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Masthead = () => {
   const {
-    graphCmsAboutPageMasthead: { title, subTitle, imageAlt },
+    graphCmsAboutPageMasthead: { title, subtitle, imageAlt },
   } = useStaticQuery(graphql`
     query AboutPageMastheadQuery {
       graphCmsAboutPageMasthead {
         title
-        subTitle
+        subtitle
         heroImage {
           gatsbyImageData
         }
@@ -126,7 +126,7 @@ const Masthead = () => {
               </Box>
             </Box>
           </Box>
-          <Typography align='center'>{subTitle}</Typography>
+          <Typography align='center'>{subtitle}</Typography>
         </Box>
       </Box>
       <ScrollButton scrollTarget='craft-section' />
