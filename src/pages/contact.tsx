@@ -1,13 +1,16 @@
 import React from 'react'
 
 import { Layout } from '../components/layout/'
-import { ContactSection, Masthead } from '../components/contactPageComponents/'
+import {
+  ContactSection,
+  ContactPageMasthead,
+} from '../components/contactPageComponents/'
 
-const ContatPage = () => (
+const ContactPage = () => (
   <Layout>
-    <Masthead />
+    <ContactPageMasthead />
     <ContactSection />
   </Layout>
 )
 
-export default ContatPage
+export default ContactPage

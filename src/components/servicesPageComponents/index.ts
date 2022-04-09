@@ -1,3 +1,3 @@
 export * from './leatherSection/'
-export * from './masthead/'
+export * from './servicesPageMasthead'
 export * from './servicesSection/'

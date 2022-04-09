@@ -2,14 +2,14 @@ import React from 'react'
 
 import { Layout } from '../components/layout/'
 import {
+  AboutPageMasthead,
   CraftSection,
   LeatherSection,
-  Masthead,
 } from '../components/aboutPageComponents/'
 
 const AboutPage = () => (
   <Layout>
-    <Masthead />
+    <AboutPageMasthead />
     <CraftSection />
     <LeatherSection />
   </Layout>

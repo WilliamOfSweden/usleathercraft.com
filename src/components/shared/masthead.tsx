@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import { useStaticQuery, graphql } from 'gatsby'
 import Container from '@material-ui/core/Container'
-import { StaticImage } from 'gatsby-plugin-image'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 
-import { ScrollButton } from '../../shared'
+import { ScrollButton } from './'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -30,18 +28,6 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingLeft: theme.spacing(2),
       paddingRight: theme.spacing(2),
       textTransform: `uppercase`,
-    },
-    image: {
-      height: `60vh`,
-      minHeight: `360px`,
-      width: `100%`,
-      [theme.breakpoints.up('md')]: {
-        height: `70vh`,
-        minHeight: `600px`,
-      },
-      [theme.breakpoints.up('lg')]: {
-        height: `85vh`,
-      },
     },
     leftArrow: {
       height: 0,
@@ -67,33 +53,19 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-export const Masthead = () => {
-  const {
-    graphCmsContactPageMasthead: { title, subtitle, imageAlt },
-  } = useStaticQuery(graphql`
-    query ContactPageMastheadQuery {
-      graphCmsContactPageMasthead {
-        title
-        subtitle
-        imageAlt
-      }
-    }
-  `)
+interface Props {
+  bgImage: ReactNode
+  scrollTarget: string
+  subtitle: string
+  title: string
+}
 
+export const Masthead = ({ bgImage, scrollTarget, subtitle, title }: Props) => {
   const classes = useStyles()
 
   return (
     <Container className={classes.container} component='section' maxWidth='xl'>
-      <StaticImage
-        alt={imageAlt}
-        className={classes.image}
-        formats={['auto', 'webp', 'avif']}
-        layout='fullWidth'
-        loading='eager'
-        placeholder='none'
-        quality={100}
-        src='https://media.graphcms.com/UKcusJfUT4uH2s17wGQp'
-      />
+      {bgImage}
       <Box className={classes.contentWrapper}>
         <Box display='flex' flexDirection='column' px={2}>
           <Typography
@@ -125,7 +97,7 @@ export const Masthead = () => {
           <Typography align='center'>{subtitle}</Typography>
         </Box>
       </Box>
-      <ScrollButton scrollTarget='contact-section' />
+      <ScrollButton scrollTarget={scrollTarget} />
     </Container>
   )
 }

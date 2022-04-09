@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 
 import { Layout } from '../components/layout/'
 
-const NotFoundPage = () => (
+const _404 = () => (
   <Layout>
     <Box
       alignItems='center'
@@ -19,4 +19,4 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export default NotFoundPage
+export default _404
