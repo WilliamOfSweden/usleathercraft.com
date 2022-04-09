@@ -1,8 +1,10 @@
+import { GatsbyConfig } from 'gatsby'
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-module.exports = {
+const gatsbyConfig: GatsbyConfig = {
   siteMetadata: {
     siteTitle: `US Leather Craft`,
     siteDescription: `Leather Repair Services in New Jersey, USA`,
@@ -48,3 +50,5 @@ module.exports = {
     `gatsby-transformer-sharp`,
   ],
 }
+
+export default gatsbyConfig
