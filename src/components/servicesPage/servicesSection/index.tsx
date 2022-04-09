@@ -7,7 +7,6 @@ import Container from '@material-ui/core/Container'
 import Divider from '@material-ui/core/Divider'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Button from '@material-ui/core/Button'
 
 import PALETTE from '../../../styles/colorPalette'
@@ -97,11 +96,7 @@ const ServicesSection = () => {
           }[]
           imageAlts: string[]
           body: {
-            markdownNode: {
-              childMdx: {
-                body: string
-              }
-            }
+            markdown: string
           }
         }
       }[]
@@ -122,11 +117,7 @@ const ServicesSection = () => {
             }
             imageAlts
             body {
-              markdownNode {
-                childMdx {
-                  body
-                }
-              }
+              markdown
             }
           }
         }
@@ -210,9 +201,11 @@ const ServicesSection = () => {
                     {edge.node.heading}
                   </Typography>
                   <Typography className={classes.paragraph} variant='body1'>
-                    <MDXRenderer>
-                      {edge.node.body.markdownNode.childMdx.body}
-                    </MDXRenderer>
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: edge.node.body.markdown,
+                      }}
+                    />
                   </Typography>
                   <Button className={classes.btn} size='large'>
                     Contact Us
