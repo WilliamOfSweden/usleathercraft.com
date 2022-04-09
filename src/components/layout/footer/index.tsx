@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Footer = () => {
+export const Footer = () => {
   const classes = useStyles()
 
   return (
@@ -74,5 +74,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

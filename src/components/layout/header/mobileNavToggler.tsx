@@ -3,7 +3,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 
-import useMobileNavStore from '../../../stores/mobileNavStore'
+import { useMobileNavStore } from '../../../hooks/'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const MobileNavToggler = () => {
+export const MobileNavToggler = () => {
   const classes = useStyles()
 
   interface StateProps {
@@ -40,5 +40,3 @@ const MobileNavToggler = () => {
     </IconButton>
   )
 }
-
-export default MobileNavToggler

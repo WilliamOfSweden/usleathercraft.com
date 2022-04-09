@@ -2,16 +2,16 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import ElevationScroll from './elevationScroll'
 import Slide from '@material-ui/core/Slide'
 import AppBar from '@material-ui/core/AppBar'
 import Container from '@material-ui/core/Container'
 import Toolbar from '@material-ui/core/Toolbar'
 import Box from '@material-ui/core/Box'
 
-import DesktopNav from './desktopNav'
-import MobileNavToggler from './mobileNavToggler'
-import MobileNav from './MobileNav'
+import { ElevationScroll } from './elevationScroll'
+import { DesktopNav } from './desktopNav'
+import { MobileNavToggler } from './mobileNavToggler'
+import { MobileNav } from './MobileNav'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Header = () => {
+export const Header = () => {
   const data = useStaticQuery(graphql`
     query navLinkQuery {
       site {
@@ -61,5 +61,3 @@ const Header = () => {
     </ElevationScroll>
   )
 }
-
-export default Header

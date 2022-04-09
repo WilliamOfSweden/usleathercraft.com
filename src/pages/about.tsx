@@ -1,18 +1,18 @@
 import React from 'react'
 
-import Layout from '../components/layout/'
-import Masthead from '../components/aboutPage/masthead/'
-import CraftSection from '../components/aboutPage/craftSection/'
-import LeatherSection from '../components/aboutPage/leatherSection'
+import { Layout } from '../components/layout/'
+import {
+  CraftSection,
+  LeatherSection,
+  Masthead,
+} from '../components/aboutPageComponents/'
 
-const AboutPage = () => {
-  return (
-    <Layout>
-      <Masthead />
-      <CraftSection />
-      <LeatherSection />
-    </Layout>
-  )
-}
+const AboutPage = () => (
+  <Layout>
+    <Masthead />
+    <CraftSection />
+    <LeatherSection />
+  </Layout>
+)
 
 export default AboutPage

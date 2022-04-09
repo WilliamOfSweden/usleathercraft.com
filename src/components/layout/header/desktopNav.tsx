@@ -30,7 +30,7 @@ interface Props {
   }
 }
 
-const DesktopNav = ({ data }: Props) => {
+export const DesktopNav = ({ data }: Props) => {
   const classes = useStyles()
 
   interface LinkProps {
@@ -55,5 +55,3 @@ const DesktopNav = ({ data }: Props) => {
     </nav>
   )
 }
-
-export default DesktopNav

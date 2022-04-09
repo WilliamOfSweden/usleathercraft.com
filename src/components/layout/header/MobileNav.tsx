@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { makeStyles, createStyles } from '@material-ui/core/styles'
-import useMobileNavStore from '../../../stores/mobileNavStore'
-import useWindowSize from '../../../hooks/useWindowSize'
+import { useMobileNavStore } from '../../../hooks/'
+import { useWindowSize } from '../../../hooks/'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import List from '@material-ui/core/List'
 import { Link } from 'gatsby'
@@ -21,7 +21,7 @@ interface Props {
     site: {
       siteMetadata: {
         navLinks: {
-          name: strin
+          name: string
           link: string
         }[]
       }
@@ -29,7 +29,7 @@ interface Props {
   }
 }
 
-const MobileNav = ({ data }: Props) => {
+export const MobileNav = ({ data }: Props) => {
   const classes = useStyles()
 
   interface StateProps {
@@ -84,5 +84,3 @@ const MobileNav = ({ data }: Props) => {
     </SwipeableDrawer>
   )
 }
-
-export default MobileNav
