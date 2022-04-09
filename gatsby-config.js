@@ -43,7 +43,6 @@ module.exports = {
         buildMarkdownNodes: true,
       },
     },
-    `gatsby-plugin-mdx`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
