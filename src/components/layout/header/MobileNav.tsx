@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { makeStyles, createStyles } from '@material-ui/core/styles'
-import { useMobileNavStore } from '../../../hooks/'
-import { useWindowSize } from '../../../hooks/'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import List from '@material-ui/core/List'
 import { Link } from 'gatsby'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
+
+import { useMobileNavStore, useWindowSize } from '../../../hooks/'
 
 const useStyles = makeStyles(() =>
   createStyles({
