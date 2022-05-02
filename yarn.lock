@@ -1088,10 +1088,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/dancing-script/-/dancing-script-4.5.8.tgz#14285a4ca9c56faa0594e47b248c8c8f7e152ec2"
   integrity sha512-LNGPp+0UhDF8IzvnCU4FzXaitD2A6LRsPM/FPnMd8yH6F85z29CNJTyksGcEr6WgwhzqJtTOg/2TqC9wPIbqwQ==
 
-"@fontsource/source-sans-pro@4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-4.5.6.tgz#1c74aa0168f0ad851e7c69a5ff25914c7691b6cb"
-  integrity sha512-MPv0Ye2OmcRD4wQ/7lOkysQpXpWkDSqZ2QHdNNLj7CQVtG03BScLMYQXZbYNhNMbH518tdMFewqDSu+/ikAMTg==
+"@fontsource/source-sans-pro@4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-4.5.9.tgz#65f0897f4d601931afe4e8451303e9c7a8d177ec"
+  integrity sha512-N4nFZhIijG/Q1vb3vaMHbcJOVoXb6S8OJKBuoLKictAH+04rduuOyLihPbQe+o2hNYLcjmUpoPMNTDnSm5yzQw==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"
