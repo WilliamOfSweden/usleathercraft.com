@@ -1157,20 +1157,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/cabin-sketch@4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-4.5.8.tgz#6976e6de421c78e89e2cfb8b06ff082fa6340ee2"
-  integrity sha512-sIEU8gbbSXNjRq73PCf6wULKuCejtU7D4yaOfLVX1dtcxECztKlUQ6/vGlmXjsOBwwP1la4iimbo7G5OnXP/VA==
-
-"@fontsource/cabin@4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-4.5.7.tgz#bcf1ef81ecf589f71accad9c412f55d8c047af0b"
-  integrity sha512-UXqN46WKawd9uCuMqSdt6UJXo32gqeJUiuIvZLUfCe6reXBmnkyoG+V62UVEf/Dmw9TII6DNwJujpa0rgiAHjQ==
-
-"@fontsource/dancing-script@4.5.9":
+"@fontsource/cabin-sketch@4.5.9":
   version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/dancing-script/-/dancing-script-4.5.9.tgz#e6fce9001764be5ff31c03aefc50c4908445328d"
-  integrity sha512-+1oLDSk3shUPXnVYj9EZfj23d/hDMtyctBPz0fWjvuWuh0YupJ/3QG9Xf8cd4xkTiJMVTCzBwBH4pxLvpSn9lQ==
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-4.5.9.tgz#062bad30b85842578cecb7c1e3a138f43de02512"
+  integrity sha512-VEscKd1LwVeEmFvnJcjpj29IGf0bSxi4CAN3DomQxXLZnXX/Y7mlLb0dgJAS6jv8jPvul8oi2QoTpAUf5K6a3Q==
+
+"@fontsource/cabin@4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-4.5.9.tgz#2396c14ce78ab55c5e32c210d3d9fcd72c8c3a2d"
+  integrity sha512-xfgktq3GUUk/LSNE91MOJyHEaeXBmAyCkjX/syEqEQj88HG7LA4npPZ0FzQ/mg56gLgdginDhkTH3/JcB+jDdA==
+
+"@fontsource/dancing-script@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/dancing-script/-/dancing-script-4.5.10.tgz#653bf55266e2d3ff8dec8209d0468650cefa904c"
+  integrity sha512-yTHWmLaucOa95f5NRgUke4kVtlmxhPKopKh3tGXNqlAByC1J/L59ALtjD6XyybpM22/ScShFIwrqqWhnCEeFiw==
 
 "@fontsource/source-sans-pro@4.5.11":
   version "4.5.11"
