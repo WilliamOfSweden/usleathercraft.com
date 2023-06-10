@@ -15,7 +15,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/cabin": "4.5.10",
+    "@fontsource/cabin": "5.0.3",
     "@fontsource/cabin-sketch": "4.5.9",
     "@fontsource/dancing-script": "4.5.11",
     "@fontsource/source-sans-pro": "4.5.11",

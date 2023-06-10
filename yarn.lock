@@ -1111,10 +1111,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-4.5.9.tgz#062bad30b85842578cecb7c1e3a138f43de02512"
   integrity sha512-VEscKd1LwVeEmFvnJcjpj29IGf0bSxi4CAN3DomQxXLZnXX/Y7mlLb0dgJAS6jv8jPvul8oi2QoTpAUf5K6a3Q==
 
-"@fontsource/cabin@4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-4.5.10.tgz#c44aad1908c6b703901063691869df17b3083bb3"
-  integrity sha512-nZWikOWwI6ONqDJco+pplHKqKCQlGdLo90eTT/Yp2lDAG1cKgXsRXEmU0KTsH3AUHO8lxXRHBPONoHSqyt8HmQ==
+"@fontsource/cabin@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-5.0.3.tgz#488159d976d208f2d19feb3187390b8087f6d720"
+  integrity sha512-G+wERHPWQeRarMUPDUe+zp29fb78RqwB+tF4qyTyz+Zsqp66d199ZBbzAoUgFul9GXjYvFrITpUi2FPvSXEo5A==
 
 "@fontsource/dancing-script@4.5.11":
   version "4.5.11"
