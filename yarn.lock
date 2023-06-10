@@ -1106,10 +1106,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/cabin-sketch@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-4.5.9.tgz#062bad30b85842578cecb7c1e3a138f43de02512"
-  integrity sha512-VEscKd1LwVeEmFvnJcjpj29IGf0bSxi4CAN3DomQxXLZnXX/Y7mlLb0dgJAS6jv8jPvul8oi2QoTpAUf5K6a3Q==
+"@fontsource/cabin-sketch@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-5.0.3.tgz#1899be69fdc3fc1a0ccc359a2f57dac4b7829571"
+  integrity sha512-mddcw6DjAM5rTN4MVGWcl2Dy5IOF7AuBebRnROMKCNbIvnIFRa9Ft+utzlK+SxV5EMTkHSNnJvZsjW55yE2CqA==
 
 "@fontsource/cabin@4.5.10":
   version "4.5.10"
