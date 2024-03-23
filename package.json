@@ -23,7 +23,7 @@
     "@material-ui/icons": "4.11.3",
     "gatsby": "5.13.3",
     "gatsby-plugin-image": "3.13.1",
-    "gatsby-plugin-material-ui": "3.0.1",
+    "gatsby-plugin-material-ui": "4.1.0",
     "gatsby-plugin-sharp": "5.13.1",
     "gatsby-plugin-smoothscroll": "1.2.0",
     "gatsby-plugin-styled-components": "6.13.1",
