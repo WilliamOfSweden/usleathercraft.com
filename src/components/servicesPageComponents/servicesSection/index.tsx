@@ -185,10 +185,9 @@ export const ServicesSection = () => {
           .filter(edge => edge.node.id === category)
           .map(edge => {
             return (
-              <Fragment>
+              <Fragment key={edge.node.id}>
                 <Grid
                   className={classes.textWrapper}
-                  key={edge.node.id}
                   item
                   xs={12}
                   md={6}

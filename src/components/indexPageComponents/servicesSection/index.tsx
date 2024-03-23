@@ -1,12 +1,11 @@
 import React from 'react'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
-import { Link } from 'gatsby'
 
 import PALETTE from '../../../styles/colorPalette'
 
