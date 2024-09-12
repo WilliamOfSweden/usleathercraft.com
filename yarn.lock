@@ -1198,25 +1198,25 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/cabin-sketch@5.0.18":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-5.0.18.tgz#c20df5f1646926bf7ecc57b9637390f293ebaf28"
-  integrity sha512-e0cBcr8qquDnBV5MBzZ87P0kUPOxz0NmuwWWrEM1jatNXvc/kgNrtMkGM+robnMQHJVg/Qbp+qgWUTUYFcBVpw==
+"@fontsource/cabin-sketch@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin-sketch/-/cabin-sketch-5.1.0.tgz#9e62dff57831c93b755b9d47ad1fa2c89543358f"
+  integrity sha512-ydgIJ+4/rQrjXs6cLe5TRy2iyBnSNhsyrjjSzVJF0xmO08ewYS1ILCn9v37f1MomiLEmdpOBqn9b1vBynux25Q==
 
-"@fontsource/cabin@5.0.17":
-  version "5.0.17"
-  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-5.0.17.tgz#314653a69867dbef2198649848c42afa68d01653"
-  integrity sha512-2hAG94ljfq7sebGO8tkPTg9IysxYvrYgCMJbx2Vvcy7tHplIa+CyxhdM7pQYkAqpqJioZkWOP8vwkQpiV/X/Aw==
+"@fontsource/cabin@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/cabin/-/cabin-5.1.0.tgz#230b0f1f6b4c1dc469a6e6372c1d9982f9837913"
+  integrity sha512-jKaPgLy+MXAQVGPop/RjRFvQGl8dtuUyN9DHZLZG1Ibxv1QVx44hiUiJmIA7qTBcOA1i0YlwyYG1s3vR3kcLKg==
 
-"@fontsource/dancing-script@5.0.17":
-  version "5.0.17"
-  resolved "https://registry.yarnpkg.com/@fontsource/dancing-script/-/dancing-script-5.0.17.tgz#ba461b14bd9e9492b21689c466b8ce2a118d15cc"
-  integrity sha512-vS9o1l7+j3hAUgDUKxiPzwlqw4huqspMf2dwNEMZI50lzg5wRlj2wnkBNON2qio+mEz7CXIkeiocPvR9y3gBug==
+"@fontsource/dancing-script@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/dancing-script/-/dancing-script-5.1.0.tgz#339a4731719cbd02f80b511d136acfb30731b31d"
+  integrity sha512-da8hT/ZUrFifAjxblVYzloiIhf8e8uUtfbh0qB5cxtNjDx4KDyUoDMj9TSAqvvjx1YKwhhfay0yDt38a19BHHQ==
 
-"@fontsource/source-sans-pro@5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-5.0.8.tgz#e246405a3bcdcf2ae6f9d7019c0d78ead71a492a"
-  integrity sha512-5U2UvIYRkCMozZ388gCE73PEpa2MFgN/0t9O4a1FF7bGT/MIneQWSL1XpWZ8iMVYdh6ntxRf3iFA6slCIuFgkg==
+"@fontsource/source-sans-pro@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-pro/-/source-sans-pro-5.1.0.tgz#17f39585dcfe9726effae887d1200b2fa8b8861a"
+  integrity sha512-GJijHmnPKwA1G8MqUVOZzbIW8jLBFsJGugAb5/IikvTHHmLp+pJy+g8EhyWbfR8pI04i/EStzW0AzOv0KQEhzg==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.13.1":
   version "2.13.1"
